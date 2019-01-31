@@ -9,11 +9,6 @@ before_script:
   - yarn run lerna run prepublish
 script:
   - yarn lerna:build-libs
-after_success:
-  - yarn run travis-deploy-once "yarn run lerna:release"
-branches:
-  except:
-    - /^v\d+\.\d+\.\d+$/
 cache: yarn
 deploy:
   provider: script
