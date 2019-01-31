@@ -1,13 +1,18 @@
 {
-  "packages": ["packages/*"],
-  "version": "0.0.8-alpha.0",
+  "packages": [
+    "packages/*"
+  ],
+  "version": "0.0.9-alpha.0",
   "npmClient": "yarn",
   "useWorkspaces": true,
   "command": {
     "publish": {
       "registry": "https://nexus.usehurrier.com/repository/logistics-npm-private/",
       "verifyAccess": false,
-      "ignoreChanges": ["*.md", "tests/*"]
+      "ignoreChanges": [
+        "*.md",
+        "tests/*"
+      ]
     }
   }
 }
