@@ -32,6 +32,7 @@ const UPPER_CASE: RegExp = /[A-Z]/
 const LOWER_CASE: RegExp = /[a-z]/
 const SPECIAL_CHARACTER: RegExp = /[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]/
 
+// simple validator
 export class PasswordValidator extends React.Component<Props, State> {
   static defaultProps = {
     password: '',
