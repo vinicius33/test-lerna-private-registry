@@ -11,7 +11,7 @@
   "scripts": {
     "lerna": "lerna",
     "lerna:prepublish": "lerna run prepublish",
-    "lerna:publish": "lerna publish --no-verify-access --yes",
+    "lerna:publish": "lerna publish --no-verify-access --yes --from-git",
     "lerna:version": "lerna version --conventional-commits --yes",
     "lerna:bootstrap": "lerna bootstrap",
     "lerna:build-libs": "lerna run build"
