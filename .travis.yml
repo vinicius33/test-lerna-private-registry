@@ -9,6 +9,7 @@ before_script:
   - yarn run lerna run prepublish
 script:
   - yarn lerna:build-libs
+  - yarn lerna:version
 cache:
   yarn: true
   directories:
