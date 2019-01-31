@@ -11,8 +11,8 @@
   "scripts": {
     "lerna": "lerna",
     "lerna:prepublish": "lerna run prepublish",
-    "lerna:publish": "lerna publish from-git --npm-tag beta --no-verify-access --yes",
-    "lerna:version": "lerna version prerelease --preid beta && yarn run lerna:postversion",
+    "lerna:publish": "lerna publish --no-verify-access --yes",
+    "lerna:version": "lerna version --conventional-commits",
     "lerna:postversion": "chan release --group-changes $(node -p -e \"require('./lerna.json').version\") && git add CHANGELOG.md && git commit -m \"Update: changelog\" && git push --follow-tags",
     "lerna:bootstrap": "lerna bootstrap",
     "lerna:build-libs": "lerna run build"
