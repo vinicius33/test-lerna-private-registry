@@ -10,14 +10,13 @@ before_script:
 script:
   - yarn lerna:build-libs
   - git checkout master
-  - yarn lerna:version
 cache:
   yarn: true
   directories:
     - 'node_modules'
 deploy:
   provider: script
-  script: 'yarn run lerna:publish'
+  script: 'yarn lerna:version && yarn run lerna:publish'
   skip_cleanup: true
   on:
     tags: true
