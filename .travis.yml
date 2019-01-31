@@ -15,3 +15,9 @@ branches:
   except:
     - /^v\d+\.\d+\.\d+$/
 cache: yarn
+deploy:
+  provider: script
+  script: 'yarn run lerna:publish'
+  skip_cleanup: true
+  on:
+    tags: true
