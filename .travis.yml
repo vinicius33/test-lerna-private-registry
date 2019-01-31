@@ -18,5 +18,3 @@ deploy:
   provider: script
   script: 'yarn lerna:version && yarn run lerna:publish'
   skip_cleanup: true
-  on:
-    tags: true
