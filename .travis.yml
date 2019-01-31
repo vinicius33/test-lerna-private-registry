@@ -9,7 +9,10 @@ before_script:
   - yarn run lerna run prepublish
 script:
   - yarn lerna:build-libs
-cache: yarn
+cache:
+  yarn: true
+  directories:
+    - 'node_modules'
 deploy:
   provider: script
   script: 'yarn run lerna:publish'
