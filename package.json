@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "lerna:bootstrap": "lerna bootstrap",
-    "lerna:release": "lerna publish --no-verify-access"
+    "lerna:release": "lerna publish --no-verify-access --registry https://nexus.usehurrier.com/repository/logistics-npm-private/"
   },
   "devDependencies": {
     "lerna": "^3.10.7"
