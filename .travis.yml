@@ -6,6 +6,7 @@ node_js:
 install:
   - yarn
 script:
+  - yarn global add lerna-semantic-release
   - yarn lerna:build-libs
 after_success:
   - yarn run travis-deploy-once "yarn run semantic-release"
