@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "publishConfig": {
-    "registry": "https://nexus.usehurrier.com/repository/logistics-npm-private/"
+    "registry": "https://nexus.usehurrier.com/repository/logistics-npm-private/:_authToken=${NEXUS_NPM_TOKEN}"
   },
   "workspaces": [
     "packages/*"
