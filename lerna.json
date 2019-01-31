@@ -1,6 +1,8 @@
 {
-  "packages": ["packages/*"],
-  "version": "1.0.6",
+  "packages": [
+    "packages/*"
+  ],
+  "version": "1.0.7",
   "npmClient": "yarn",
   "useWorkspaces": true,
   "command": {
@@ -9,7 +11,10 @@
       "verifyAccess": false,
       "allowBranch": "master",
       "message": "chore(release): publish %s",
-      "ignoreChanges": ["*.md", "tests/*"]
+      "ignoreChanges": [
+        "*.md",
+        "tests/*"
+      ]
     },
     "version": {
       "verifyAccess": false

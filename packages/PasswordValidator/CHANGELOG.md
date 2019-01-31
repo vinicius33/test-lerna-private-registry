@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.7](https://github.com/vinicius33/test-lerna-private-registry/compare/v1.0.6...v1.0.7) (2019-01-31)
+
+
+### Bug Fixes
+
+* **PasswordValidator:** version ([a8a8e8a](https://github.com/vinicius33/test-lerna-private-registry/commit/a8a8e8a))
+* **PasswordValidator:** version ([7c6e3b5](https://github.com/vinicius33/test-lerna-private-registry/commit/7c6e3b5))
+* **PasswordValidator:** version ([fbacb4a](https://github.com/vinicius33/test-lerna-private-registry/commit/fbacb4a))
+
+
+
+
+
 ## [1.0.6](https://github.com/vinicius33/test-lerna-private-registry/compare/v1.0.5...v1.0.6) (2019-01-31)
 
 
