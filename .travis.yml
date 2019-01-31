@@ -6,10 +6,9 @@ node_js:
 install:
   - yarn
 script:
-  - yarn global add lerna-semantic-release
   - yarn lerna:build-libs
 after_success:
-  - yarn run travis-deploy-once "yarn run semantic-release"
+  - yarn run travis-deploy-once "yarn run lerna:release"
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
