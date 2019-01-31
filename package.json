@@ -12,7 +12,7 @@
     "lerna": "lerna",
     "lerna:prepublish": "lerna run prepublish",
     "lerna:publish": "lerna publish --no-verify-access --yes",
-    "lerna:version": "lerna version --conventional-commits --yes --no-push && git push --tags",
+    "lerna:version": "lerna version --conventional-commits --yes",
     "lerna:postversion": "chan release --group-changes $(node -p -e \"require('./lerna.json').version\") && git add CHANGELOG.md && git commit -m \"Update: changelog\" && git push --follow-tags",
     "lerna:bootstrap": "lerna bootstrap",
     "lerna:build-libs": "lerna run build"
