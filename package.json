@@ -12,6 +12,7 @@
     "lerna:bootstrap": "lerna bootstrap",
     "lerna:build-libs": "lerna run build",
     "lerna:release": "lerna publish --no-verify-access --registry https://nexus.usehurrier.com/repository/logistics-npm-private/",
+    "travis-deploy-once": "travis-deploy-once --pro",
     "semantic-release:pre": "lerna-semantic-release pre",
     "semantic-release:perform": "lerna-semantic-release perform",
     "semantic-release:post": "lerna-semantic-release post",
