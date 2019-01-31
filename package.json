@@ -13,12 +13,10 @@
     "lerna:prepublish": "lerna run prepublish",
     "lerna:publish": "lerna publish --no-verify-access --yes",
     "lerna:version": "lerna version --conventional-commits --yes",
-    "lerna:postversion": "chan release --group-changes $(node -p -e \"require('./lerna.json').version\") && git add CHANGELOG.md && git commit -m \"Update: changelog\" && git push --follow-tags",
     "lerna:bootstrap": "lerna bootstrap",
     "lerna:build-libs": "lerna run build"
   },
   "devDependencies": {
-    "@geut/chan": "^1.3.0",
     "cz-lerna-changelog": "^2.0.2",
     "lerna": "^3.10.7"
   },
