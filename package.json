@@ -9,11 +9,22 @@
     "packages/*"
   ],
   "scripts": {
+    "lerna": "lerna",
+    "lerna:prepublish": "lerna run prepublish",
+    "lerna:publish": "lerna publish from-git --npm-tag beta --no-verify-access --yes",
+    "lerna:version": "lerna version prerelease --preid beta && yarn run lerna:postversion",
+    "lerna:postversion": "chan release --group-changes $(node -p -e \"require('./lerna.json').version\") && git add CHANGELOG.md && git commit -m \"Update: changelog\" && git push --follow-tags",
     "lerna:bootstrap": "lerna bootstrap",
-    "lerna:build-libs": "lerna run build",
-    "lerna:release": "lerna publish --no-verify-access --registry https://nexus.usehurrier.com/repository/logistics-npm-private/"
+    "lerna:build-libs": "lerna run build"
   },
   "devDependencies": {
+    "@geut/chan": "^1.3.0",
+    "cz-lerna-changelog": "^2.0.2",
     "lerna": "^3.10.7"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-lerna-changelog"
+    }
   }
 }
