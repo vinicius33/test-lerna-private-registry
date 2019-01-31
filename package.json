@@ -11,9 +11,21 @@
   "scripts": {
     "lerna:bootstrap": "lerna bootstrap",
     "lerna:build-libs": "lerna run build",
-    "lerna:release": "lerna publish --no-verify-access --registry https://nexus.usehurrier.com/repository/logistics-npm-private/"
+    "lerna:release": "lerna publish --no-verify-access --registry https://nexus.usehurrier.com/repository/logistics-npm-private/",
+    "semantic-release:pre": "lerna-semantic-release pre",
+    "semantic-release:perform": "lerna-semantic-release perform",
+    "semantic-release:post": "lerna-semantic-release post",
+    "semantic-release": "yarn run semantic-release:pre && yarn run semantic-release:perform && yarn run semantic-release:post"
   },
   "devDependencies": {
-    "lerna": "^3.10.7"
+    "cz-lerna-changelog": "^2.0.2",
+    "lerna": "^3.10.7",
+    "lerna-semantic-release": "^9.1.0",
+    "travis-deploy-once": "^5.0.11"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-lerna-changelog"
+    }
   }
 }
