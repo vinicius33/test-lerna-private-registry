@@ -9,6 +9,7 @@ before_script:
   - yarn run lerna run prepublish
 script:
   - yarn lerna:build-libs
+  - git checkout master
   - yarn lerna:version
 cache:
   yarn: true
