@@ -5,8 +5,6 @@ node_js:
   - 'lts/*'
 install:
   - yarn
-before_script:
-  - yarn run lerna run prepublish
 script:
   - yarn lerna:build-libs
 cache:
